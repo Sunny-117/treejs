@@ -1,5 +1,11 @@
 # @outilx/node
 
+## 1.0.1
+
+### Patch Changes
+
+- 发布新版本
+
 ## 1.0.0
 
 ### Major Changes

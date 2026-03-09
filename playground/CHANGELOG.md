@@ -1,5 +1,14 @@
 # playground
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @outilx/browser@1.0.1
+  - @outilx/react-hooks@1.0.1
+  - @outilx/ai@1.0.1
+
 ## 1.0.0
 
 ### Major Changes
