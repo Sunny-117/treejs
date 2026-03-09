@@ -8,6 +8,7 @@ Browser utility functions for modern web development.
 
 - [Network](/api/browser/network) - Network information using browser APIs
 - [Storage](/api/browser/storage) - LocalStorage-based caching
+- [Timer](/api/browser/timer) - Precise timer using Web Worker (not throttled in background tabs)
 
 ## Installation
 

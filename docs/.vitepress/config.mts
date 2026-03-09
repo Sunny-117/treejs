@@ -67,6 +67,7 @@ export default defineConfig({
             { text: "Overview", link: "/api/browser/" },
             { text: "Network", link: "/api/browser/network" },
             { text: "Storage", link: "/api/browser/storage" },
+            { text: "Timer", link: "/api/browser/timer" },
           ],
         },
         {

@@ -5,9 +5,10 @@ import SSEDemo from './demos/SSEDemo';
 import BrowserDemo from './demos/BrowserDemo';
 import ReactHooksDemo from './demos/ReactHooksDemo';
 import { AsyncProcessorDemo } from './demos/AsyncProcessorDemo';
+import PreciseTimerDemo from './demos/PreciseTimerDemo';
 
-type DemoType = 'code-detection' | 'streaming' | 'sse' | 'browser' | 'react-hooks' | 'async-processor';
-const validDemos: DemoType[] = ['code-detection', 'streaming', 'sse', 'browser', 'react-hooks', 'async-processor'];
+type DemoType = 'code-detection' | 'streaming' | 'sse' | 'browser' | 'react-hooks' | 'async-processor' | 'precise-timer';
+const validDemos: DemoType[] = ['code-detection', 'streaming', 'sse', 'browser', 'react-hooks', 'async-processor', 'precise-timer'];
 
 function App() {
   const getInitialDemo = (): DemoType => {
@@ -109,6 +110,7 @@ function App() {
           onClick={() => handleDemoChange('async-processor')}
           style={{
             padding: '8px 16px',
+            marginRight: '10px',
             border: 'none',
             background: activeDemo === 'async-processor' ? '#333' : '#eee',
             color: activeDemo === 'async-processor' ? '#fff' : '#333',
@@ -116,6 +118,18 @@ function App() {
           }}
         >
           Async Processor
+        </button>
+        <button
+          onClick={() => handleDemoChange('precise-timer')}
+          style={{
+            padding: '8px 16px',
+            border: 'none',
+            background: activeDemo === 'precise-timer' ? '#333' : '#eee',
+            color: activeDemo === 'precise-timer' ? '#fff' : '#333',
+            cursor: 'pointer',
+          }}
+        >
+          Precise Timer
         </button>
       </nav>
 
@@ -126,6 +140,7 @@ function App() {
         {activeDemo === 'browser' && <BrowserDemo />}
         {activeDemo === 'react-hooks' && <ReactHooksDemo />}
         {activeDemo === 'async-processor' && <AsyncProcessorDemo />}
+        {activeDemo === 'precise-timer' && <PreciseTimerDemo />}
       </div>
     </div>
   );
